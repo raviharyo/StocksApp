@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_container"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="100dp"
+                android:paddingTop="80dp"
+                android:paddingBottom="60dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/login_header"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/alertInfoFontColor"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <!--            android:background="@color/alertInfo"-->
+
+            <EditText
+                android:id="@+id/email"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17sp"
+                android:layout_margin="15sp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="7sp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="7sp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/nameBox"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_name"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="7sp"
+                android:layout_margin="15sp"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:inputType="textPersonName"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/phone_num"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15sp"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="7sp"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3">
+
+                <Button
+                    android:id="@+id/register_btn"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/buttons"
+                    android:text="@string/action_register"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

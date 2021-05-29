@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tasks</string>
+    <string name="title_activity_login1">Sign in or create an account</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Full Name</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_register">Sign Up</string>
+    <string name="action_have_account">Sudah memiliki akun?</string>
+    <string name="action_submit">Kirim</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="error_unavailable_email">Email has been registered</string>
+    <string name="error_invalid_password">Invalid Password</string>
+    <string name="error_incorrect_password">Incorrect Password</string>
+    <string name="error_field_required">Field must be filled</string>
+    <string name="txt_signup">Sign Up</string>
+    <string name="txt_note">Swipe left to edit task, and swipe right to delete task.</string>
+    <string name="login_header">Tasks</string>
+    <string name="txt_welcome">Welcome,</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+
+</resources>

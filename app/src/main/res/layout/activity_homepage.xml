@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8sp"
+        android:text="@string/txt_welcome"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txt_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_welcome"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text=""
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/txt_task"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:text="Your Tasks"
+        android:textSize="11pt" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_profile_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/txt_profile_name"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginLeft="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:text="ID"-->
+<!--        android:textSize="8pt" />-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60sp"
+        android:layout_height="0.3sp"
+        android:layout_marginHorizontal="10sp"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat"
+        android:layout_margin="15sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_task"
+        android:nestedScrollingEnabled="true" />
+
+    <TextView
+        android:id="@+id/txt_note"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fab"
+        android:layout_toLeftOf="@id/fab"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15sp"
+        android:textStyle="normal"
+        android:textColor="@color/alertSecondaryFontColor"
+        android:text="@string/txt_note"
+        android:textSize="6pt" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="35sp"
+        android:src="@drawable/ic_add" />
+
+
+</RelativeLayout>
